@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foster's Baked Goods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Foster's Baked Goods</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            <ul id="navMenu">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#slideshow">Gallery</a></li>
+                <li><a href="#order">Order</a></li>`
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Freshly Baked Goodness</h1>
+        <p>Made-to-order baked goods at fair prices</p>
+        <a href="#order" class="cta-button">Place An Order</a>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow" class="container">
+        <h2>Featured Products</h2>
+        <div class="slideshow-container">
+
+            <div class="slide">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="400" fill="#fef9f3"/>
+                    <circle cx="200" cy="200" r="100" fill="#F5DEB3"/>
+                    <circle cx="180" cy="180" r="15" fill="#8B7355"/>
+                    <circle cx="220" cy="180" r="15" fill="#8B7355"/>
+                    <circle cx="190" cy="210" r="12" fill="#8B7355"/>
+                    <circle cx="210" cy="210" r="12" fill="#8B7355"/>
+                </svg>
+                <div class="slide-content">
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>Classic favorite</p>
+                </div>
+
+                <div class="slide-content">
+                    <h3>Sourdough Bread</h3>
+                    <p>Rustic and hearty pantry staple- great with butter!</p>
+                </div>
+
+                <div class="slide-content">
+                    <h3>Cakes</h3>
+                    <p>Custom made cakes for birthdays and special occasions</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">></a>
+            <a class="next" onclick="changeSlide(1)">></a>
+        </div>
+
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Browned Butter Chocolate Chip Cookies - crispy edges and chewy middle. Suitable for those that don't like thick doughy cookies.</p>
+                <div class="price">$8.00</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Sourdough Bread</h3>
+                <p>Handmade sourdough bread with a crackly crust and soft pillowy interior. Available in white and 20% whole wheat.</p>
+                <div class="price">$9</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cakes</h3>
+                <p>Custom made cakes for birthdays and special occasions. Made with all-natural ingredients and decorated by request. I'll really do whatever flavor, size, or design you want.</p>
+                <div class="price">Contact For Picing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <p>Fill out and order form and I'll contact you with a confirmation of your order details.</p>
+            <a href="https://forms.gle/placeholder" target="_blank" class="cta-button">Order Now</a>
+            <p style="margin-top: 2rem; font-size: 0.9rem;">
+                Replace "https://forms.gle/placeholder" in the code with your Google Form link
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Foster's Baked Goods. All rights reserved.</p>
+        <p>Foster's Baked Goods is a Cottage Food Operation. All products are produced in a home kitchen not inspected by a health department that may also process common food allergens. If you have safety concerns, contact your local health department.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
