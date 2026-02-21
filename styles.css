@@ -115,6 +115,12 @@ nav a:hover {
     padding: 0 1rem;
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
 /* Section Styling */
 section {
     padding: 4rem 2rem;
