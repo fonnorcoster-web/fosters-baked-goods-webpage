@@ -249,7 +249,6 @@ section h2 {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    margin: -2rem -2rem 1rem -2rem;
 }
 
 .menu-item:hover {
