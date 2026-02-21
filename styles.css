@@ -234,6 +234,14 @@ section h2 {
 }
 
 .menu-item {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: -2rem -2rem 1rem -2rem;
+}
+
+.menu-item img {
     background: white;
     max-width: 600px;
     object-fit: cover;
