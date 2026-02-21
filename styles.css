@@ -120,6 +120,7 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .about-container img {
