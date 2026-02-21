@@ -121,6 +121,19 @@ nav a:hover {
     gap: 2rem;
     align-items: center;
 }
+
+.about-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-container p {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #555;
+}
 /* Section Styling */
 section {
     padding: 4rem 2rem;
