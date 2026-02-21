@@ -13,6 +13,7 @@
             <a href="#" class="logo">Foster's Baked Goods</a>
             <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
             <ul id="navMenu">
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#slideshow">Gallery</a></li>
                 <li><a href="#order">Order</a></li>
@@ -22,37 +23,94 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Freshly Baked Goodness</h1>
+        <h1>Freshly Baked Goods</h1>
         <p>Made-to-order baked goods at fair prices</p>
         <a href="#order" class="cta-button">Place An Order</a>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Baker</h2>
+        <img src="assets/baker.jpg" alt="Connor Foster" class="baker-photo">
+        <p style="float: right;"> 
+            Hi! I'm Connor Foster. I'm a one man operation dedicated to creating delicious breads, pastries, and cakes. 
+            I have always had a passion for baking. After graduating college, I got my first "professional" gig decorating cakes at HyVee in Marion, Iowa.
+            Though I since moved to Chicago in the summer of 2023 to pursue my current career as a Software Engineer, I started the process of creating this business in 2025 as a labor of love.
+            I make all my products from sratch using as high quality ingredients as are readily available to me (thank you Costco for carrying 12 lb bags of King Arthur Flour). I love working with seasonal produce and experimenting with new flavors and developing new recipes.
+        </p>
+        <hr>
+        <h2>About the Kitchen</h2>
+        <p>
+            I operate as a Cottage Food Operation in the state of Illinois. This means that all my products are made in a home kitchen that is not inspected by a health department. 
+            I take food safety very seriously and follow all guidelines for safe food handling and production, and am Serv Safe certified as a food safety manager. If you have any concerns about food safety, please contact your local health department for more information.
+        </p>
+        <hr>
+        <h2>About the Pricing</h2>
+        <p>
+            I strive to make all my prices fair and equitable for both myself and my customers. I am frequently scolded by friends for asking them what they think a fair price is, rather than just charging them a number. 
+            I want to keep my prices low enough to offer a fair level of entry for people who want to try my products, but high enough cover cost of ingredients and compensate me for my time, as well as my skills and how intricate the product is.
+            Here's a breakdown of my price calculation:
+            <ul>
+                <li>Cost of Ingredients - For example, a two dozen cage-free eggs is $4.59 at Costco, so 6 eggs costs $1.15</li>
+                <li>Labor - I charge the minimum wage of Chicago, which is $16.60/hr</li>
+                <li>Packaging Costs</li>
+            </ul>
+        </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Chocolate Chip Cookies</h3>
+                <img src="assets/cookies.jpg" alt="Chocolate Chip Cookies">
+                <p>Browned Butter Chocolate Chip Cookies - crispy edges and chewy middle. Suitable for those that don't like thick doughy cookies.</p>
+                <div class="price">$17/doz</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Sourdough Bread</h3>
+                <img src="assets/bread.jpg" alt="Sourdough Bread">
+                <p>Handmade sourdough bread with a crackly crust and soft pillowy interior. Available in white and 20% whole wheat.</p>
+                <div class="price">$12</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cakes</h3>
+                <p>Custom made cakes for birthdays and special occasions. Made with all-natural ingredients and decorated by request. I'll really do whatever flavor, size, or design you want.</p>
+                <div class="price">Contact For Pricing</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Slideshow Section -->
     <section id="slideshow" class="container">
-        <h2>Featured Products</h2>
+        <h2>Cake Showcase</h2>
         <div class="slideshow-container">
 
-            <div class="slide active">
-                <img src="assets/cookies.jpg" alt="Chocolate Chip Cookies">
+            <div class="slide">
+                <img src="assets/coconut_cake.jpg" alt="Cakes">
                 <div class="slide-content">
-                    <h3>Chocolate Chip Cookies</h3>
-                    <p>Classic favorite</p>
+                    <h3>Pineapple Coconut Cake</h3>
+                    <p>Classic white cake made with coconut milk, soaked in a homemade pineapple syrup. Frosted with a coconut swiss meringue buttercream. Topped and filled with a fresh pineapple jam.</p>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="assets/bread.jpg" alt="Sourdough Bread">
+                <img src="assets/mango_cake.jpg" alt="Cakes">
                 <div class="slide-content">
-                    <h3>Sourdough Bread</h3>
-                    <p>Rustic and hearty - great with butter!</p>
+                    <h3>Mango Chiffon Cake</h3>
+                    <p>Light and airy chiffon cake with mango compote, topped with a mango gel and freshly sliced mangoes. Frosted with mascarpone whipped cream.</p>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="assets/cake.jpg" alt="Cakes">
+                <img src="assets/vanilla_cake.jpg" alt="Cakes">
                 <div class="slide-content">
-                    <h3>Cakes</h3>
-                    <p>Custom made cakes for birthdays and special occasions</p>
+                    <h3>Classic Vanilla Cake</h3>
+                    <p>Rich and moist vanilla butter cake with real whole vanilla beans in the rich and smooth swiss meringue buttercream.</p>
                 </div>
             </div>
 
@@ -64,31 +122,6 @@
             <span class="dot active" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="container">
-        <h2>Menu</h2>
-        <div class="menu-grid">
-
-            <div class="menu-item">
-                <h3>Chocolate Chip Cookies</h3>
-                <p>Browned Butter Chocolate Chip Cookies - crispy edges and chewy middle. Suitable for those that don't like thick doughy cookies.</p>
-                <div class="price">$17/doz</div>
-            </div>
-
-            <div class="menu-item">
-                <h3>Sourdough Bread</h3>
-                <p>Handmade sourdough bread with a crackly crust and soft pillowy interior. Available in white and 20% whole wheat.</p>
-                <div class="price">$12</div>
-            </div>
-
-            <div class="menu-item">
-                <h3>Cakes</h3>
-                <p>Custom made cakes for birthdays and special occasions. Made with all-natural ingredients and decorated by request. I'll really do whatever flavor, size, or design you want.</p>
-                <div class="price">Contact For Pricing</div>
-            </div>
         </div>
     </section>
 
