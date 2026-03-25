@@ -44,4 +44,4 @@ navMenu.querySelectorAll('a').forEach(link => {
 // Auto-advance slideshow every 5 seconds
 setInterval(() => {
     changeSlide(1);
-}, 10000);
+}, 7500);
